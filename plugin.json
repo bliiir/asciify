@@ -1,0 +1,8 @@
+{
+  "name": "Asciify",
+  "description": "A Neovim plugin to replace non-ASCII characters with similar looking ASCII characters.",
+  "author": "Rasmus Groth",
+  "license": "MIT",
+  "repository": "https://github.com/bliiir/asciify",
+  "entry": "lua/asciify.lua"
+}
