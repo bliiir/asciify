@@ -8,4 +8,12 @@ M.asciify = function()
     vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
 end
 
+M.setup = function()
+    vim.api.nvim_create_user_command('Asciify', function()
+        Asciify()
+    end, {
+        desc 'Replace non-Ascii characters with Ascii equivalents'
+    })
+end
+
 return M
