@@ -9,11 +9,15 @@ M.asciify = function()
 end
 
 M.setup = function()
-    vim.api.nvim_create_user_command('Asciify', function()
-        Asciify()
-    end, {
-        desc 'Replace non-Ascii characters with Ascii equivalents'
-    })
+    vim.api.nvim_create_user_command(
+        'Asciify', 
+        function()
+            M.asciify()
+        end, 
+        {
+            desc='Replace non-Ascii characters with Ascii equivalents'
+        }
+    )
 end
 
 return M
